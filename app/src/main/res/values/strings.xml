@@ -7,9 +7,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--User drawer-->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <!--Admin drawer-->
+    <string name="admin_menu_home">Home</string>
+    <string name="menu_admin_vehicle">Vehicle</string>
+    <string name="menu_admin_notifications">Notifications</string>
+
+    <!--Driver drawer-->
+    <string name="menu_menu_home">Home</string>
+
     <string name="delete_vehicle">Delete Vehicle</string>
     <string name="feedback_portal">Feedback Portal</string>
     <string name="recycling_information">RECYCLING INFORMATION</string>
@@ -33,4 +43,8 @@
     <string name="admin_singup">ADMIN SINGUP</string>
     <string name="user_login">USER LOGIN</string>
     <string name="user_name">User Name</string>
+    <string name="title_activity_admin_drawer">AdminDrawerActivity</string>
+
+
+
 </resources>

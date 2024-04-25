@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_admin_home">
+
+    <fragment
+        android:id="@+id/nav_admin_home"
+        android:name="com.garbagecollections.ui.admin.home.AdminHomeFragment"
+        android:label="@string/admin_menu_home"
+        tools:layout="@layout/fragment_admin_home" />
+
+    <fragment
+        android:id="@+id/nav_admin_vehicle"
+        android:name="com.garbagecollections.ui.admin.vehicle.AdminVehicleFragment"
+        android:label="@string/menu_admin_vehicle"
+        tools:layout="@layout/fragment_admin_vehicle" />
+
+    <fragment
+        android:id="@+id/nav_admin_notifications"
+        android:name="com.garbagecollections.ui.admin.notifications.AdminNotificationsFragment"
+        android:label="@string/menu_admin_notifications"
+        tools:layout="@layout/fragment_admin_notifications" />
+
+
+</navigation>

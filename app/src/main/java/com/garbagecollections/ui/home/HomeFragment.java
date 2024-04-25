@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.button4;
+        final TextView textView = binding.test;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

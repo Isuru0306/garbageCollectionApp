@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/admin_menu_home" />
+
+        <item
+            android:id="@+id/nav_admin_vehicle"
+            android:icon="@drawable/baseline_drive_eta_24"
+            android:title="@string/menu_admin_vehicle" />
+
+        <item
+            android:id="@+id/nav_admin_notifications"
+            android:icon="@drawable/baseline_drive_eta_24"
+            android:title="@string/admin_notifications" />
+
+    </group>
+</menu>

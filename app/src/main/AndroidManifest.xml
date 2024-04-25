@@ -13,12 +13,28 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
+            android:name=".ui.admin.AdminNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.AdminVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.vehicle.Vehicle"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.Vehicle"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDrawerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin_drawer"
+            android:theme="@style/Theme.GarbageCollections.NoActionBar" />
+        <activity
             android:name=".activities.admin.AdminLogin"
             android:exported="false" />
         <activity
             android:name=".ui.admin.AdminHome"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -27,7 +43,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".activities.driver.DriverLogin"
             android:exported="true"

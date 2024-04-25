@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.garbagecollections.AdminDrawerActivity;
 import com.garbagecollections.MainActivity;
 import com.garbagecollections.R;
 
@@ -31,7 +32,7 @@ public class DriverLogin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainActivity = new Intent(com.garbagecollections.activities.driver.DriverLogin.this, MainActivity.class);
+                Intent mainActivity = new Intent(com.garbagecollections.activities.driver.DriverLogin.this, AdminDrawerActivity.class);
                 startActivity(mainActivity);
             }
         });
