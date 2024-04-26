@@ -45,6 +45,7 @@
     <string name="user_login">USER LOGIN</string>
     <string name="user_name">User Name</string>
     <string name="title_activity_admin_drawer">AdminDrawerActivity</string>
+    <string name="title_activity_driver_drawer">DriverDrawerActivity</string>
 
 
 </resources>
