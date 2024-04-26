@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
+            android:name=".ui.admin.AdminDataReport"
+            android:exported="false" />
+        <activity
             android:name=".ui.admin.AdminNotifications"
             android:exported="false" />
         <activity

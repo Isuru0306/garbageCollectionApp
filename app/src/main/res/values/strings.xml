@@ -15,6 +15,7 @@
     <!--Admin drawer-->
     <string name="admin_menu_home">Home</string>
     <string name="menu_admin_vehicle">Vehicle</string>
+    <string name="menu_admin_data_report">Data Report</string>
     <string name="menu_admin_notifications">Notifications</string>
 
     <!--Driver drawer-->
@@ -44,7 +45,6 @@
     <string name="user_login">USER LOGIN</string>
     <string name="user_name">User Name</string>
     <string name="title_activity_admin_drawer">AdminDrawerActivity</string>
-
 
 
 </resources>

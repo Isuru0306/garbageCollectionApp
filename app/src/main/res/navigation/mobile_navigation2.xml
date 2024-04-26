@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_admin_vehicle" />
 
     <fragment
+        android:id="@+id/nav_admin_data_report"
+        android:name="com.garbagecollections.ui.admin.report.AdminDataReportFragment"
+        android:label="@string/menu_admin_data_report"
+        tools:layout="@layout/fragment_admin_data_report" />
+
+    <fragment
         android:id="@+id/nav_admin_notifications"
         android:name="com.garbagecollections.ui.admin.notifications.AdminNotificationsFragment"
         android:label="@string/menu_admin_notifications"

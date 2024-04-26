@@ -42,7 +42,7 @@ public class AdminDrawerActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_admin_home, R.id.nav_admin_vehicle, R.id.admin_notifications)
+                R.id.nav_admin_home, R.id.nav_admin_vehicle,R.id.admin_data_report,  R.id.admin_notifications)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_admin_drawer);
