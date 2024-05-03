@@ -13,21 +13,17 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
 
-        <!--Driver-->
+        <!-- Driver -->
         <activity
             android:name=".DriverDrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_driver_drawer"
-            android:theme="@style/Theme.GarbageCollections.NoActionBar" />
-
-        <!-- Admin -->
+            android:theme="@style/Theme.GarbageCollections.NoActionBar" /> <!-- Admin -->
         <activity
             android:name=".AdminDrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_admin_drawer"
-            android:theme="@style/Theme.GarbageCollections.NoActionBar" />
-
-        <!-- User -->
+            android:theme="@style/Theme.GarbageCollections.NoActionBar" /> <!-- User -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -37,13 +33,15 @@
                 android:value="" />
         </activity>
 
-        <!-- Logins -->
+        <!-- User register-->
         <activity
-            android:name=".activities.admin.AdminLogin"
+            android:name=".activities.user.UserRegister"
+            android:theme="@style/Theme.GarbageCollections.NoActionBar"
             android:exported="false" />
 
+        <!-- Logins -->
         <activity
-            android:name=".activities.driver.DriverLogin"
+            android:name=".activities.Login"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.GarbageCollections.NoActionBar">

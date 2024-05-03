@@ -43,9 +43,12 @@
     <string name="admin_login">ADMIN LOGIN</string>
     <string name="admin_singup">ADMIN SINGUP</string>
     <string name="user_login">USER LOGIN</string>
-    <string name="user_name">User Name</string>
     <string name="title_activity_admin_drawer">AdminDrawerActivity</string>
     <string name="title_activity_driver_drawer">DriverDrawerActivity</string>
+    <string name="username">Username</string>
+    <string name="user_singup">USER SINGUP</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
 
 
 </resources>

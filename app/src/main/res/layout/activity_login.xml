@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.driver.DriverLogin">
+    tools:context=".activities.Login">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="41dp"
             android:gravity="center"
-            android:text="@string/user_login"
+            android:text="@string/login"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -39,8 +39,7 @@
             android:layout_height="63dp"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:paddingTop="16dp"
-            android:text="@string/user_name"
-            android:autofillHints=""
+            android:hint="@string/username"
             android:inputType="text"
             tools:ignore="LabelFor" />
 
@@ -72,6 +71,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/navigate_user_signup"
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:minHeight="48dp"
