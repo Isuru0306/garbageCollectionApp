@@ -13,9 +13,11 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
-            android:name=".ui.admin.AdminUserRegister"
+            android:name=".ui.driver.DriverScedules"
             android:exported="false" />
-        <!-- Driver -->
+        <activity
+            android:name=".ui.admin.AdminUserRegister"
+            android:exported="false" /> <!-- Driver -->
         <activity
             android:name=".DriverDrawerActivity"
             android:exported="false"
