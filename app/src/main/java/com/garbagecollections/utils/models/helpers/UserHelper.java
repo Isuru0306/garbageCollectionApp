@@ -1,4 +1,4 @@
-package com.garbagecollections.utils.models;
+package com.garbagecollections.utils.models.helpers;
 
 public class UserHelper {
     private String name, email, username, password, user_type;

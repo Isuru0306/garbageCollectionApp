@@ -17,6 +17,7 @@
     <string name="menu_admin_vehicle">Vehicle</string>
     <string name="menu_admin_data_report">Data Report</string>
     <string name="menu_admin_notifications">Notifications</string>
+    <string name="menu_admin_users">User Manage</string>
 
     <!--Driver drawer-->
     <string name="menu_menu_home">Home</string>
@@ -49,6 +50,7 @@
     <string name="user_singup">USER SINGUP</string>
     <string name="full_name">Full Name</string>
     <string name="email">Email</string>
+    <string name="users_register">User Register</string>
 
 
 </resources>

@@ -3,8 +3,8 @@ package com.garbagecollections.utils.auth;
 
 import androidx.annotation.NonNull;
 
-import com.garbagecollections.utils.models.FireBaseConfig;
-import com.garbagecollections.utils.models.UserHelper;
+import com.garbagecollections.utils.config.FireBaseConfig;
+import com.garbagecollections.utils.models.helpers.UserHelper;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.Query;
@@ -15,7 +15,7 @@ import java.util.Objects;
 public class Auth extends FireBaseConfig {
 
     public Auth() {
-        super();
+        super("users");
     }
 
 

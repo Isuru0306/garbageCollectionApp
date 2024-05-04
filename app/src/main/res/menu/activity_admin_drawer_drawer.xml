@@ -24,5 +24,10 @@
             android:icon="@drawable/baseline_drive_eta_24"
             android:title="@string/menu_admin_notifications" />
 
+        <item
+            android:id="@+id/nav_admin_users"
+            android:icon="@drawable/baseline_drive_eta_24"
+            android:title="@string/menu_admin_users" />
+
     </group>
 </menu>

@@ -20,7 +20,7 @@ import com.garbagecollections.MainActivity;
 import com.garbagecollections.R;
 import com.garbagecollections.activities.user.UserRegister;
 import com.garbagecollections.utils.auth.Auth;
-import com.garbagecollections.utils.models.UserHelper;
+import com.garbagecollections.utils.models.helpers.UserHelper;
 
 public class Login extends AppCompatActivity  {
 
@@ -55,7 +55,6 @@ public class Login extends AppCompatActivity  {
                     auth.signIn(userHelper, new Auth.AuthListener() {
                         @Override
                         public void onAuthSuccess(UserHelper user) {
-                            System.out.println(user.getUser_type());
                             Toast.makeText(Login.this, "Login success", Toast.LENGTH_SHORT).show();
                             String userType = user.getUser_type();
                             switch (userType) {

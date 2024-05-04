@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.garbagecollections.R;
 import com.garbagecollections.activities.Login;
 import com.garbagecollections.utils.auth.Auth;
-import com.garbagecollections.utils.models.UserHelper;
+import com.garbagecollections.utils.models.helpers.UserHelper;
 
 public class UserRegister extends AppCompatActivity {
 
