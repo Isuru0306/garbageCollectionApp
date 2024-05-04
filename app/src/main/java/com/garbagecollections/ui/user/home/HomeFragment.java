@@ -1,4 +1,4 @@
-package com.garbagecollections.ui.home;
+package com.garbagecollections.ui.user.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
