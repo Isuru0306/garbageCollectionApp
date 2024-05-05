@@ -14,5 +14,10 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_schedules" />
 
+        <item
+            android:id="@+id/nav_driver_map"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_map" />
+
     </group>
 </menu>
