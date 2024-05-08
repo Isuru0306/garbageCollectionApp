@@ -20,6 +20,9 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
+            android:name=".activities.Edit_profile"
+            android:exported="false" />
+        <activity
             android:name=".activities.schedule"
             android:exported="false" />
         <activity

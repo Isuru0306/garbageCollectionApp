@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/Feedback"
-        android:hint=""/>
+        android:hint="write your feedback here "/>
 <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

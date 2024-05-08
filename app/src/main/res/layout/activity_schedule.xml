@@ -8,6 +8,13 @@
     android:layout_height="match_parent"
     tools:context=".activities.schedule">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/clean_for_green"/>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="409dp"
         android:layout_height="wrap_content"
@@ -74,8 +81,9 @@
         android:id="@+id/submitbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Schedule Notification"/>
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1E3E21"
+        android:text="Schedule Notification" />
 
 </LinearLayout>
