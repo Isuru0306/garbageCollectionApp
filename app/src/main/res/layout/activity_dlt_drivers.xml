@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/admin_vehicle"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vehicle.AdminVehicleFragment">
+    tools:context=".ui.admin.dlt_drivers">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -34,30 +34,30 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <EditText
         android:id="@+id/catagory"
         android:layout_width="286dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="428dp"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
         android:ems="10"
-        android:hint="Vehicle Number"
+        android:hint="Driver Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/V_number"
         android:layout_width="286dp"
         android:layout_height="48dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="376dp"
         android:ems="10"
-        android:hint="Register year "
+        android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -68,9 +68,9 @@
         android:id="@+id/engine"
         android:layout_width="286dp"
         android:layout_height="48dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="308dp"
         android:ems="10"
-        android:hint="Engine Number"
+        android:hint="Mobile Number"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,22 +80,36 @@
 
     <Button
         android:id="@+id/add_button"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="500dp"
-        android:text="Add Vehicle "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/del_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="568dp"
         android:text="Delete Vehicle "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:text="confirm delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="291dp"
+        android:layout_height="47dp"
+        android:text="Reason for Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

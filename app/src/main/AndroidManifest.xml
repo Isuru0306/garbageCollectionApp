@@ -20,6 +20,12 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
+            android:name=".ui.admin.dlt_drivers"
+            android:exported="false" />
+        <activity
+            android:name=".activities.delete_vehicle"
+            android:exported="false" />
+        <activity
             android:name=".activities.Edit_profile"
             android:exported="false" />
         <activity
