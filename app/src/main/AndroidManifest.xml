@@ -20,6 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.user.UserFeedback"
+            android:exported="false"
+            android:theme="@style/Theme.GarbageCollections.NoActionBar"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

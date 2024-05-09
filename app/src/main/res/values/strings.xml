@@ -52,6 +52,8 @@
     <string name="full_name">Full Name</string>
     <string name="email">Email</string>
     <string name="users_register">User Register</string>
+    <string name="write_your_feedback_here">write your feedback here</string>
+    <string name="send_feedback">Send Feedback</string>
 
 
 </resources>
