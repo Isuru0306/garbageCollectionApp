@@ -9,86 +9,58 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="150dp"
-        android:layout_height="127dp"
+        android:layout_width="388dp"
+        android:layout_height="49dp"
         android:backgroundTint="#1C4E1E"
         android:text="@string/delete_vehicle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="157dp"
-        android:layout_height="119dp"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
         android:layout_marginTop="316dp"
         android:backgroundTint="#1C421E"
         android:text="@string/feedback_portal"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="157dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="316dp"
-        android:backgroundTint="#1C421E"
-        android:text="@string/recycling_information"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="157dp"
-        android:layout_height="124dp"
-        android:backgroundTint="#1C421E"
-        android:text="@string/data_management"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="145dp"
-        android:layout_height="129dp"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
         android:backgroundTint="#1C4E1E"
         android:text="@string/delete_drivers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.335" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="120dp"
+        android:layout_width="388dp"
+        android:layout_height="47dp"
         android:backgroundTint="#1C4E1E"
         android:text="@string/update_notification"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.555" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -102,5 +74,20 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/clean_for_green"
         android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="391dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="316dp"
+        android:backgroundTint="#1C421E"
+        android:text="Notification scheduler"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.121" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

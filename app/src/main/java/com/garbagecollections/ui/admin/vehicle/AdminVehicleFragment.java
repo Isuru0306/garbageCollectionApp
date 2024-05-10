@@ -11,8 +11,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.garbagecollections.R;
+import com.google.firebase.Firebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AdminVehicleFragment extends Fragment {
 
@@ -22,10 +27,17 @@ public class AdminVehicleFragment extends Fragment {
         return new AdminVehicleFragment();
     }
 
+    private EditText textView14, catagory, V_number;
+    private Button add_button,del_button;
+    private DatabaseReference rootDatabaseref;
+
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(AdminVehicleViewModel.class);
+
         // TODO: Use the ViewModel
     }
 
