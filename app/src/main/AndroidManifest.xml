@@ -2,13 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,15 +19,17 @@
         android:theme="@style/Theme.GarbageCollections"
         tools:targetApi="31">
         <activity
-            android:name=".activities.user.UserFeedback"
+            android:name=".activities.user.EditProfile"
             android:exported="false"
             android:theme="@style/Theme.GarbageCollections.NoActionBar"/>
+        <activity
+            android:name=".activities.user.UserFeedback"
+            android:exported="false"
+            android:theme="@style/Theme.GarbageCollections.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBVQk4EW8yW2v8Qu3o3a3gRQ3ijglCQ1b8" />
-
-     <!-- Driver -->
+            android:value="AIzaSyBVQk4EW8yW2v8Qu3o3a3gRQ3ijglCQ1b8" /> <!-- Driver -->
         <activity
             android:name=".DriverDrawerActivity"
             android:exported="false"
@@ -47,8 +47,7 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <!-- User register -->
+        </activity> <!-- User register -->
         <activity
             android:name=".activities.user.UserRegister"
             android:exported="false"

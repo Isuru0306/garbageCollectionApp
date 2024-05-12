@@ -60,12 +60,64 @@ public class Auth extends FireBaseConfig {
         });
     }
 
+    public void findUserByUsername(@NonNull String username, AuthListener listener) {
+        Query query = databaseReference.orderByChild("username").equalTo(username);
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                        String name = Objects.requireNonNull(snapshot.child(username).child("name").getValue()).toString();
+                        String email = Objects.requireNonNull(snapshot.child(username).child("email").getValue()).toString();
+                        String userName = Objects.requireNonNull(snapshot.child(username).child("username").getValue()).toString();
+                        String password = Objects.requireNonNull(snapshot.child(username).child("password").getValue()).toString();
+                        String user_type = Objects.requireNonNull(snapshot.child(username).child("user_type").getValue()).toString();
+                        UserHelper user = new UserHelper(name, email, userName, password, user_type);
+                        listener.onAuthSuccess(user);
+                } else {
+                    listener.onAuthFailed();
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                listener.onAuthFailed();
+            }
+        });
+    }
+
+
+    public  void  updateUserDetails(@NonNull UserHelper userHelper, UpdateListener listener){
+        Query query = databaseReference.orderByChild("username").equalTo(userHelper.getUsername());
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                snapshot.getRef().child(userHelper.getUsername()).child("name").setValue(userHelper.getName());
+                snapshot.getRef().child(userHelper.getUsername()).child("email").setValue(userHelper.getEmail());
+                snapshot.getRef().child(userHelper.getUsername()).child("password").setValue(userHelper.getPassword());
+
+
+                listener.onUpdateSuccess();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                listener.onUpdateFailed();
+            }
+        });
+    }
+
+
 
 
     public interface AuthListener {
         public abstract void onAuthSuccess(UserHelper use);
 
         public abstract void onAuthFailed();
+    }
+
+    public interface UpdateListener{
+        public abstract void onUpdateSuccess();
+
+        public abstract void onUpdateFailed();
     }
 
 }

@@ -54,6 +54,7 @@
     <string name="users_register">User Register</string>
     <string name="write_your_feedback_here">write your feedback here</string>
     <string name="send_feedback">Send Feedback</string>
+    <string name="save_changes">SAVE CHANGES</string>
 
 
 </resources>

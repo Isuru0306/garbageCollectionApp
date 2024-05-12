@@ -20,6 +20,7 @@ import com.garbagecollections.MainActivity;
 import com.garbagecollections.R;
 import com.garbagecollections.activities.user.UserRegister;
 import com.garbagecollections.utils.auth.Auth;
+import com.garbagecollections.utils.models.helpers.FileHelper;
 import com.garbagecollections.utils.models.helpers.UserHelper;
 
 public class Login extends AppCompatActivity  {
@@ -57,6 +58,10 @@ public class Login extends AppCompatActivity  {
                         public void onAuthSuccess(UserHelper user) {
                             Toast.makeText(Login.this, "Login success", Toast.LENGTH_SHORT).show();
                             String userType = user.getUser_type();
+                            String loggedUser = userName;
+                            FileHelper fileHelper = new FileHelper(Login.this,"logged_user.txt");
+                            boolean s = fileHelper.writeToFile(loggedUser);
+
                             switch (userType) {
                                 case "ADMIN": {
                                     Intent mainActivity = new Intent(Login.this, AdminDrawerActivity.class);

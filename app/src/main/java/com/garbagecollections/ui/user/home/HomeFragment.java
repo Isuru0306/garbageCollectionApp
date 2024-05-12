@@ -6,19 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.garbagecollections.DriverDrawerActivity;
+
 import com.garbagecollections.R;
-import com.garbagecollections.activities.Login;
+import com.garbagecollections.activities.user.EditProfile;
 import com.garbagecollections.activities.user.UserFeedback;
 import com.garbagecollections.databinding.FragmentHomeBinding;
-import com.garbagecollections.utils.models.helpers.FeedbackHelper;
-import com.google.android.gms.location.LocationServices;
 
 public class HomeFragment extends Fragment {
 
@@ -29,12 +25,23 @@ public class HomeFragment extends Fragment {
         assert inflater != null;
         View rootView = inflater.inflate(R.layout.fragment_home, null);
 
+        // Feedback
         Button feedbackView = rootView.findViewById(R.id.feedback_view_btn);
         feedbackView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent userFeedback = new Intent(requireContext(), UserFeedback.class);
                 startActivity(userFeedback);
+            }
+        });
+
+        // Edit profile
+        Button editPro = rootView.findViewById(R.id.editProfile);
+        editPro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent userEdit = new Intent(requireContext(), EditProfile.class);
+                startActivity(userEdit);
             }
         });
 
